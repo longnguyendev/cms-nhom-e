@@ -25,6 +25,8 @@ services:
       - wpsite
     ports:
       - "3306:3306"
+    volumes:
+      - ./datababse-wordpress:/home/myhome
   php:
     image: php:8.0-apache
     volumes:
